@@ -44,3 +44,74 @@ body {
 		opacity: 0;
 	}
 }
+
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1000px;
+	align-items: center;
+	background-color: royalblue;
+}
+
+.nav-items {
+	display: flex;
+	margin: 0 30px;
+}
+
+.nav-items a {
+	padding: 2em 1em;
+	color: aliceblue;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-items a:hover {
+	color: royalblue;
+	background-color: aliceblue;
+}
+
+.search-box {
+	position: relative;
+	align-self: stretch;
+}
+
+.search-input {
+	padding: 2em;
+	width: 300px;
+	background-color: aliceblue;
+	border: none;
+	color: #333;
+	font-size: 16px;
+	transform: translateX(0) scaleX(0);
+	transform-origin: right;
+	transition: transform .3s;
+}
+
+.search-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 80px;
+	border: none;
+	background-color: royalblue;
+	cursor: pointer;
+}
+
+.search-btn:focus,
+.search-input:focus {
+	outline: none;
+}
+
+.search-btn:focus {
+	background-color: rgb(48, 80, 175);
+}
+.search-input:focus {
+	background-color: rgb(216, 225, 233);
+}
+.active {
+	transform: translateX(-80px) scaleX(1);
+}

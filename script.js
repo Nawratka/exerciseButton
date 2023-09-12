@@ -26,3 +26,14 @@ const btnAnimation = (e) => {
 };
 
 btn.addEventListener('click', btnAnimation);
+
+// search input
+
+const searchBtn = document.querySelector('.search-btn');
+const input = document.querySelector('.search-input');
+
+const showSearchInput = () => {
+    input.classList.toggle('active');
+}
+
+searchBtn.addEventListener('click', showSearchInput)
